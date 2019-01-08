@@ -173,6 +173,35 @@ myColors.map()
 myColors.filter()
 
 
-Day:7 (returning and muting)
+Day:7 (returning and mutating)
 =============================
+
+let pets = [
+{name; "Meowalot", species: "cat", age: 2},
+{name: "Barksalot", species: "dog", age: 7}
+]
+
+pets.push()
+
+pets.map(nameOnly)
+
+function nameOnly(pet){
+  return pet.name
+}
+
+let dogs = pets.filter(onlyDogs)
+
+function onlyDogs(pet){
+  return pet.species == "dog"
+}
+
+function onlybabies(pet){
+  return pet.age < 3
+}
+
+let babyDogNames = pets.filter(onlyDogs).filter(onlyBabies).map(nameOnly)
+
+Day:8 (Scope and Context)
+============================
+
 
