@@ -125,3 +125,54 @@ while (count <= 200){
 Day:6 (Higher Order Functions)
 ===============================
 
+1) Accepts a function as an argument.
+2) Returns a function.
+
+document.addEventListener('click', ourAmazingFunction);
+
+function ourAmazingFunction(){
+  alert("Thank you for clicking.");
+}
+
+function doubleMe(x){
+  return x*2;
+}
+
+function tripleMe(x){
+  return x*3;
+}
+
+function quadrupleMe(x){
+  return x*4;
+}
+
+document.write(doubleMe(20))
+
+function createMultiplier(multiplier){
+  return function(x){
+    return x * multiplier
+  }
+}
+
+let doubleMe = createMultiplier(2)
+let tripleMe = createMultiplier(3)
+let quadrupleMe = createMultiplier(4)
+
+document.write(doubleMe(12))
+document.write(tripleMe(12))
+document.write(quadrupleMe(12))
+
+let myColors = ['red','orange','yellow']
+myColors.forEach(saySomethingnice)
+
+function saySomethingNice(color){
+  document.write(color)
+}
+
+myColors.map()
+myColors.filter()
+
+
+Day:7 (returning and muting)
+=============================
+
