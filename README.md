@@ -101,3 +101,27 @@ console.log(myPets[1].species)
 Day:5 (Decisions)
 ==================
 
+let strawberryCount = 20
+if (strawberryCount > 9 ){ // any larger than 0 is true // it is really expected for true and false
+  document.write("Congrats!")
+}else{
+  document.write("Sorry, we do not ship orders that small.")
+}
+
+let testValue = true
+let testValue = false 
+
+while(true){
+  document.write("Some writings");
+}
+
+let count = 2
+while (count <= 200){
+  document.write(count);
+  count += 1;
+}
+
+
+Day:6 (Higher Order Functions)
+===============================
+
