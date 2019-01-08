@@ -61,7 +61,7 @@ let cat = {
   }
 }
 
-# oject contains properties and methods
+// Oject contains properties and methods
 
 cat.name 
 cat.age
@@ -74,3 +74,30 @@ document.addEventListener('click',myAmazingFunction)
 function myAmazingFunction(){
   alert("Hello, There!");
 }
+
+Day:4 (Arrays)
+==============
+
+let myFavoriteNumber = 7
+let myFavoriteNumbers = [2,3,4,5,6,7,8,9]
+let myWords = ['red','orange','Yellow']
+let pets = [{name:"Meowsalot",species:"cat"},{name:"Barksalot",species:"dog"}]
+
+myWords.push() // onto the end of an existing array
+console.log(myWords)
+
+let myName = 'mobasshir'
+console.log(myName.toUpperCase())
+
+let myNumber = 7.89
+console.log(myNumber.toFixed())
+
+myWords.splice(1,1) // index,how many number
+
+console.log(myFavoriteNumbers[1])
+
+console.log(myPets[1].species)
+
+Day:5 (Decisions)
+==================
+
