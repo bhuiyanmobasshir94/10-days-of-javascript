@@ -249,3 +249,21 @@ breathe.call(john)
 Day:9 (Miscellaneous)
 =======================
 
+document.addEventListener("clicl",()=>alert("Thank you for clicking!"))
+
+let myNumbers = [20,400,650]
+let doubledNUmbers = myNumbers.map(x => x*2)
+console.log(doubledNumbers)
+
+// function hoisting
+
+cool()
+function cool(){
+  console.log("hey...")
+}
+
+let myName = 'mobasshir'
+console.log(`Hello, my name is ${myName}. I am a bad guy.`)
+
+Day:10 (Web browser Practices)
+===============================
