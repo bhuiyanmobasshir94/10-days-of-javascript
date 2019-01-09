@@ -204,4 +204,48 @@ let babyDogNames = pets.filter(onlyDogs).filter(onlyBabies).map(nameOnly)
 Day:8 (Scope and Context)
 ============================
 
+// scope is a biggest source of confusion regarding variables.
+// context is the biggest source of confusion regarding objects.
+
+let myName = 'mobasshir'
+
+function amazingFunction(){
+  let myName = 'Brad Junior';
+  if(2+2 == 4){
+    let myName = 'Bhuiyan';
+    console.log(myName);
+  }
+}
+
+amazingFunction()
+
+// let uses block scope
+// var uses fuction scope
+
+
+let john = {
+  firstName: "john",
+  lastname: "Doe",
+  driveCar(){
+    function iAmFunction(){
+      console.log(this)
+    }
+    iAmFunction()
+    console.log(this.fistName + " " + this.lastName + "is driving a car.");
+  }
+}
+
+john.driveCar()
+
+function breathe(){
+  console.log(this.fistName + " " + this.lastName + " just inhaled and exhaled.");
+}
+
+breathe.call(john)
+// window is a top level global object
+
+// The thid kkeyword points towards the object that is executing the current function
+
+Day:9 (Miscellaneous)
+=======================
 
